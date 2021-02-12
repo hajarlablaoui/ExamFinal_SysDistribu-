@@ -6,7 +6,6 @@ import org.sid.compteop.entities.Compte;
 import org.sid.compteop.entities.Operation;
 import org.sid.compteop.services.CompteOperationsService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.Collection;
 
 @RestController
