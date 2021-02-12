@@ -23,7 +23,7 @@ public class Compte {
     private double solde=0;
     private Date dateCreation;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
     Collection<Operation> operations;
 
     @Enumerated(EnumType.STRING)

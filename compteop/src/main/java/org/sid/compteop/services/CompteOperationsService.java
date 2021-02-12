@@ -10,7 +10,7 @@ public interface CompteOperationsService {
     public Compte verseMontantCompte(Long compteId, double montant);
     public Compte retraitMontantCompte(Long compteId, double montant);
     public double virementCompte(Long compteDmetteurId,Long compteDestinataireId, double montant);
-    public Collection<Operation> listOperations(Long compteId);
+    public Collection<Operation> GetAllOperations(Long compteId);
     public Compte getCompteetClient(Long compteId);
     public Compte editCompteEtat(Long compteId, boolean actif);
 }

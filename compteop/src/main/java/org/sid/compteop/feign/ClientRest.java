@@ -12,7 +12,4 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ClientRest {
     @GetMapping(path="/clients/{id}")
     Client getClientById(@PathVariable(name = "id") Long id);
-
-    @GetMapping(path="/clients")
-    PagedModel<Client> pageClient(@RequestParam(name = "page")int page, @RequestParam(name = "size")int size);
 }
